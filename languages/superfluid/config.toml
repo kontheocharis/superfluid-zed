@@ -1,0 +1,20 @@
+name = "Superfluid"
+grammar = "superfluid"
+path_suffixes = ["sf"]
+line_comments = ["-- "]
+autoclose_before = ";:.,=}])>"
+
+brackets = [
+    { start = "{", end = "}", newline = true, close = true },
+    { start = "[[", end = "]]", newline = false, close = true },
+    { start = "[", end = "]", newline = false, close = true },
+    { start = "(", end = ")", newline = false, close = true },
+    { start = "\"", end = "\"", newline = false, close = true, not_in = [
+        "comment",
+        "string",
+    ] },
+    { start = "'", end = "'", newline = false, close = true, not_in = [
+        "comment",
+        "string",
+    ] },
+]

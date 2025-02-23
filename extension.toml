@@ -1,0 +1,11 @@
+id = "superfluid"
+name = "Superfluid"
+version = "0.0.1"
+schema_version = 1
+authors = ["Constantine Theocharis <cthe@mailbox.org>"]
+description = "Superfluid for Zed"
+repository = "https://github.com/kontheocharis/superfluid-zed.git"
+
+[grammars.superfluid]
+repository = "https://github.com/kontheocharis/superfluid-tree-sitter.git"
+commit = "master"
