@@ -3,6 +3,7 @@
   "data"
   "def"
   "repr"
+  "unrepr"
   "as"
   "prim"
   "case"
